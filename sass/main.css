@@ -1,0 +1,1565 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  height: 100%;
+  width: 100%;
+}
+
+#photo {
+  height: 30rem;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(39, 35, 35, 0.6);
+  z-index: 100;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navigation ul a,
+.navigation ul a:visited {
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: floralwhite;
+}
+
+.navigation ul a:hover,
+.navigation ul a:visited:hover {
+  color: ghostwhite;
+}
+
+.info {
+  width: 70rem;
+  height: 70rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#353535de), to(#252525de));
+  background-image: linear-gradient(#353535de, #252525de);
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
+  -webkit-animation: drop 1s ease;
+          animation: drop 1s ease;
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1rem 1rem 10rem black;
+          box-shadow: 1rem 1rem 10rem black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 4.8rem;
+  color: whitesmoke;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.cont {
+  width: 30ch;
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  color: whitesmoke;
+  word-spacing: 0.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Poppins", sans-serif;
+  -webkit-animation: turd 2s ease;
+          animation: turd 2s ease;
+}
+
+.contact-table {
+  width: 90rem;
+  height: 60rem;
+  background-color: rgba(82, 82, 90, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1rem 1rem 10rem black;
+          box-shadow: 1rem 1rem 10rem black;
+  border-radius: 5rem;
+}
+
+.co {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  font-family: "Dancing Script", cursive;
+  color: whitesmoke;
+  font-size: 6.5rem;
+}
+
+@-webkit-keyframes drop {
+  from {
+    -webkit-transform: translateY(0) rotateY(0deg) translate(-50%, -50%);
+            transform: translateY(0) rotateY(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: translateY(200px) rotateY(360deg) translate(-50%, -50%);
+            transform: translateY(200px) rotateY(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes drop {
+  from {
+    -webkit-transform: translateY(0) rotateY(0deg) translate(-50%, -50%);
+            transform: translateY(0) rotateY(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: translateY(200px) rotateY(360deg) translate(-50%, -50%);
+            transform: translateY(200px) rotateY(360deg) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes turd {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes turd {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.cursor {
+  display: inline-block;
+  height: var(--height2);
+  width: var(--width2);
+  background-color: var(--color);
+  -webkit-animation: blink 1s ease infinite;
+  animation: blink 1s ease infinite;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.svg {
+  width: 150px;
+  height: 150px;
+}
+
+.terminal {
+  color: #f2aa4c;
+  font-family: "JetBrains Mono", monospace;
+  width: 120ch;
+  height: 50vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 23, 31, 0.7)), to(rgba(41, 61, 81, 0.7)));
+  background-image: linear-gradient(rgba(15, 23, 31, 0.7), rgba(41, 61, 81, 0.7));
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.uppertext {
+  font-family: "Dancing Script", cursive;
+  font-size: 6rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+
+.board {
+  background-color: rgba(82, 82, 90, 0.5);
+  width: 70%;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1rem 1rem 10rem black;
+          box-shadow: 1rem 1rem 10rem black;
+  border-radius: 5rem;
+}
+
+.why {
+  font-size: 6rem;
+  font-family: "Dancing Script", cursive;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: white;
+}
+
+.m {
+  font-size: 2.4rem;
+}
+
+.m::before {
+  content: "\2714";
+  margin-left: -3rem;
+  margin-right: 4rem;
+  color: greenyellow;
+  font-size: 6rem;
+}
+
+.ftg {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  height: 30rem;
+  background-color: gold;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes wow {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes wow {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.glass {
+  background-color: black;
+  height: 7rem;
+  width: 7rem;
+}
+
+.conector {
+  position: absolute;
+  background-color: black;
+  width: 10rem;
+  height: 2rem;
+}
+
+.glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mouth {
+  width: 6rem;
+  height: 6rem;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-animation: wow 1s ease alternate infinite;
+          animation: wow 1s ease alternate infinite;
+}
+
+.eyebrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  width: 100%;
+}
+
+.eyebrow {
+  height: 20px;
+  width: 50px;
+  background-color: black;
+}
+
+.eyebrow1 {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.eyebrow2 {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .terminal {
+    width: 95%;
+  }
+  .face {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .box {
+    display: none;
+  }
+  .contact-table {
+    width: 95%;
+  }
+  .terminal {
+    -webkit-clip-path: none;
+            clip-path: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 50%;
+  }
+  .uppertext {
+    top: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  .info {
+    width: 95%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 5px;
+  }
+  .cont {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .uppertext {
+    display: none;
+  }
+  .svg {
+    height: 100px;
+    width: 100px;
+  }
+  .board {
+    width: 95%;
+  }
+  #likeness {
+    display: none;
+  }
+}
+
+:root {
+  --width: 300px;
+  --height: 300px;
+  --rows: 9;
+  --columns: 9;
+  --speed: 20;
+  --color: rgb(0, 0, 0);
+  --width2: 0.2rem;
+  --height2: 30px;
+}
+
+.g,
+.h,
+.n {
+  width: var(--width);
+  height: var(--height);
+  background-color: transparent;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[var];
+      grid-template-rows: repeat(var(--rows), 1fr);
+  -ms-grid-columns: (1fr)[var];
+      grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.h,
+.n {
+  position: absolute;
+}
+
+.h {
+  top: 50%;
+  left: 10%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.n {
+  top: 50%;
+  right: 10%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.box1 {
+  background-color: transparent;
+}
+
+.box2 {
+  background-color: transparent;
+}
+
+.box3 {
+  background-color: transparent;
+}
+
+.box4 {
+  background-color: transparent;
+}
+
+.box5 {
+  background-color: transparent;
+}
+
+.box6 {
+  background-color: transparent;
+}
+
+.box7 {
+  background-color: transparent;
+}
+
+.box8 {
+  background-color: transparent;
+}
+
+.box9 {
+  background-color: transparent;
+}
+
+.box10 {
+  background-color: transparent;
+}
+
+.box11 {
+  background-color: transparent;
+}
+
+.box12 {
+  background-color: transparent;
+}
+
+.box13 {
+  background-color: white;
+}
+
+.box14 {
+  background-color: transparent;
+}
+
+.box15 {
+  background-color: white;
+}
+
+.box16 {
+  background-color: transparent;
+}
+
+.box17 {
+  background-color: transparent;
+}
+
+.box18 {
+  background-color: transparent;
+}
+
+.box19 {
+  background-color: #ff00ae;
+}
+
+.box20 {
+  background-color: #ff00ae;
+}
+
+.box21 {
+  background-color: transparent;
+}
+
+.box22 {
+  background-color: transparent;
+}
+
+.box23 {
+  background-color: #a75a01;
+}
+
+.box24 {
+  background-color: transparent;
+}
+
+.box25 {
+  background-color: transparent;
+}
+
+.box26 {
+  background-color: #ff00ae;
+}
+
+.box27 {
+  background-color: #ff00ae;
+}
+
+.box28 {
+  background-color: #ff00ae;
+}
+
+.box29 {
+  background-color: #0e01cb;
+}
+
+.box30 {
+  background-color: #ff00ae;
+}
+
+.box31 {
+  background-color: #ff00ae;
+}
+
+.box32 {
+  background-color: #a75a01;
+}
+
+.box33 {
+  background-color: #ff00ae;
+}
+
+.box34 {
+  background-color: #ff00ae;
+}
+
+.box35 {
+  background-color: #0e01cb;
+}
+
+.box36 {
+  background-color: #ff00ae;
+}
+
+.box37 {
+  background-color: #ff00ae;
+}
+
+.box38 {
+  background-color: #fff700;
+}
+
+.box39 {
+  background-color: #0e01cb;
+}
+
+.box40 {
+  background-color: #0e01cb;
+}
+
+.box41 {
+  background-color: #a75a01;
+}
+
+.box42 {
+  background-color: #0e01cb;
+}
+
+.box43 {
+  background-color: #0e01cb;
+}
+
+.box44 {
+  background-color: #fff700;
+}
+
+.box45 {
+  background-color: #ff00ae;
+}
+
+.box46 {
+  background-color: #ff00ae;
+}
+
+.box47 {
+  background-color: #0e01cb;
+}
+
+.box48 {
+  background-color: #8880ff;
+}
+
+.box49 {
+  background-color: #ff00ae;
+}
+
+.box50 {
+  background-color: #a75a01;
+}
+
+.box51 {
+  background-color: #ff00ae;
+}
+
+.box52 {
+  background-color: #8880ff;
+}
+
+.box53 {
+  background-color: #0e01cb;
+}
+
+.box54 {
+  background-color: #ff00ae;
+}
+
+.box55 {
+  background-color: #ff00ae;
+}
+
+.box56 {
+  background-color: #ff00ae;
+}
+
+.box57 {
+  background-color: transparent;
+}
+
+.box58 {
+  background-color: transparent;
+}
+
+.box59 {
+  background-color: #a75a01;
+}
+
+.box60 {
+  background-color: transparent;
+}
+
+.box61 {
+  background-color: #ff00ae;
+}
+
+.box62 {
+  background-color: #ff00ae;
+}
+
+.box63 {
+  background-color: #ff00ae;
+}
+
+.box64 {
+  background-color: transparent;
+}
+
+.box65 {
+  background-color: transparent;
+}
+
+.box66 {
+  background-color: transparent;
+}
+
+.box67 {
+  background-color: transparent;
+}
+
+.box68 {
+  background-color: transparent;
+}
+
+.box69 {
+  background-color: transparent;
+}
+
+.box70 {
+  background-color: transparent;
+}
+
+.box71 {
+  background-color: transparent;
+}
+
+.box72 {
+  background-color: transparent;
+}
+
+.box73 {
+  background-color: transparent;
+}
+
+.box74 {
+  background-color: transparent;
+}
+
+.box75 {
+  background-color: transparent;
+}
+
+.box76 {
+  background-color: transparent;
+}
+
+.box77 {
+  background-color: transparent;
+}
+
+.box78 {
+  background-color: transparent;
+}
+
+.box79 {
+  background-color: transparent;
+}
+
+.box80 {
+  background-color: transparent;
+}
+
+.box81 {
+  background-color: transparent;
+}
+
+.box82 {
+  background-color: transparent;
+}
+
+.box83 {
+  background-color: transparent;
+}
+
+.box84 {
+  background-color: transparent;
+}
+
+.box85 {
+  background-color: transparent;
+}
+
+.box86 {
+  background-color: transparent;
+}
+
+.box87 {
+  background-color: transparent;
+}
+
+.box88 {
+  background-color: transparent;
+}
+
+.box89 {
+  background-color: transparent;
+}
+
+.box90 {
+  background-color: transparent;
+}
+
+.box91 {
+  background-color: transparent;
+}
+
+.box92 {
+  background-color: transparent;
+}
+
+.box93 {
+  background-color: transparent;
+}
+
+.box94 {
+  background-color: transparent;
+}
+
+.box95 {
+  background-color: transparent;
+}
+
+.box96 {
+  background-color: transparent;
+}
+
+.box97 {
+  background-color: transparent;
+}
+
+.box98 {
+  background-color: transparent;
+}
+
+.box99 {
+  background-color: transparent;
+}
+
+.box100 {
+  background-color: transparent;
+}
+
+.box101 {
+  background-color: transparent;
+}
+
+.box102 {
+  background-color: transparent;
+}
+
+.box103 {
+  background-color: transparent;
+}
+
+.box104 {
+  background-color: transparent;
+}
+
+.box105 {
+  background-color: transparent;
+}
+
+.box106 {
+  background-color: transparent;
+}
+
+.box107 {
+  background-color: transparent;
+}
+
+.box108 {
+  background-color: transparent;
+}
+
+.box109 {
+  background-color: transparent;
+}
+
+.box110 {
+  background-color: transparent;
+}
+
+.box111 {
+  background-color: transparent;
+}
+
+.box112 {
+  background-color: transparent;
+}
+
+.box113 {
+  background-color: transparent;
+}
+
+.box114 {
+  background-color: transparent;
+}
+
+.box115 {
+  background-color: transparent;
+}
+
+.box116 {
+  background-color: transparent;
+}
+
+.box117 {
+  background-color: transparent;
+}
+
+.box118 {
+  background-color: transparent;
+}
+
+.box119 {
+  background-color: transparent;
+}
+
+.box120 {
+  background-color: transparent;
+}
+
+.box121 {
+  background-color: transparent;
+}
+
+.box122 {
+  background-color: transparent;
+}
+
+.box123 {
+  background-color: transparent;
+}
+
+.box124 {
+  background-color: transparent;
+}
+
+.box125 {
+  background-color: transparent;
+}
+
+.box126 {
+  background-color: transparent;
+}
+
+.box127 {
+  background-color: transparent;
+}
+
+.box128 {
+  background-color: transparent;
+}
+
+.box129 {
+  background-color: transparent;
+}
+
+.box130 {
+  background-color: transparent;
+}
+
+.box131 {
+  background-color: transparent;
+}
+
+.box132 {
+  background-color: transparent;
+}
+
+.box133 {
+  background-color: transparent;
+}
+
+.box134 {
+  background-color: transparent;
+}
+
+.box135 {
+  background-color: transparent;
+}
+
+.box136 {
+  background-color: transparent;
+}
+
+.box137 {
+  background-color: transparent;
+}
+
+.box138 {
+  background-color: transparent;
+}
+
+.box139 {
+  background-color: transparent;
+}
+
+.box140 {
+  background-color: transparent;
+}
+
+.box141 {
+  background-color: transparent;
+}
+
+.box142 {
+  background-color: transparent;
+}
+
+.box143 {
+  background-color: transparent;
+}
+
+.box144 {
+  background-color: transparent;
+}
+
+.box145 {
+  background-color: transparent;
+}
+
+.box146 {
+  background-color: transparent;
+}
+
+.box147 {
+  background-color: transparent;
+}
+
+.box148 {
+  background-color: transparent;
+}
+
+.box149 {
+  background-color: transparent;
+}
+
+.box150 {
+  background-color: transparent;
+}
+
+.box151 {
+  background-color: transparent;
+}
+
+.box152 {
+  background-color: transparent;
+}
+
+.box153 {
+  background-color: transparent;
+}
+
+.box154 {
+  background-color: transparent;
+}
+
+.box155 {
+  background-color: transparent;
+}
+
+.box156 {
+  background-color: transparent;
+}
+
+.box157 {
+  background-color: transparent;
+}
+
+.box158 {
+  background-color: transparent;
+}
+
+.box159 {
+  background-color: transparent;
+}
+
+.box160 {
+  background-color: transparent;
+}
+
+.box161 {
+  background-color: transparent;
+}
+
+.box162 {
+  background-color: transparent;
+}
+
+.box163 {
+  background-color: transparent;
+}
+
+.box164 {
+  background-color: transparent;
+}
+
+.box165 {
+  background-color: transparent;
+}
+
+.box166 {
+  background-color: transparent;
+}
+
+.box167 {
+  background-color: transparent;
+}
+
+.box168 {
+  background-color: transparent;
+}
+
+.box169 {
+  background-color: transparent;
+}
+
+.box170 {
+  background-color: transparent;
+}
+
+.box171 {
+  background-color: transparent;
+}
+
+.box172 {
+  background-color: transparent;
+}
+
+.box173 {
+  background-color: transparent;
+}
+
+.box174 {
+  background-color: transparent;
+}
+
+.box175 {
+  background-color: transparent;
+}
+
+.box176 {
+  background-color: transparent;
+}
+
+.box177 {
+  background-color: transparent;
+}
+
+.box178 {
+  background-color: transparent;
+}
+
+.box179 {
+  background-color: transparent;
+}
+
+.box180 {
+  background-color: transparent;
+}
+
+.box181 {
+  background-color: transparent;
+}
+
+.box182 {
+  background-color: transparent;
+}
+
+.box183 {
+  background-color: transparent;
+}
+
+.box184 {
+  background-color: transparent;
+}
+
+.box185 {
+  background-color: transparent;
+}
+
+.box186 {
+  background-color: transparent;
+}
+
+.box187 {
+  background-color: transparent;
+}
+
+.box188 {
+  background-color: transparent;
+}
+
+.box189 {
+  background-color: transparent;
+}
+
+.box190 {
+  background-color: transparent;
+}
+
+.box191 {
+  background-color: transparent;
+}
+
+.box192 {
+  background-color: transparent;
+}
+
+.box193 {
+  background-color: transparent;
+}
+
+.box194 {
+  background-color: transparent;
+}
+
+.box195 {
+  background-color: transparent;
+}
+
+.box196 {
+  background-color: transparent;
+}
+
+.box197 {
+  background-color: transparent;
+}
+
+.box198 {
+  background-color: transparent;
+}
+
+.box199 {
+  background-color: transparent;
+}
+
+.box200 {
+  background-color: transparent;
+}
+
+.box201 {
+  background-color: transparent;
+}
+
+.box202 {
+  background-color: transparent;
+}
+
+.box203 {
+  background-color: transparent;
+}
+
+.box204 {
+  background-color: transparent;
+}
+
+.box205 {
+  background-color: transparent;
+}
+
+.box206 {
+  background-color: transparent;
+}
+
+.box207 {
+  background-color: transparent;
+}
+
+.box208 {
+  background-color: transparent;
+}
+
+.box209 {
+  background-color: transparent;
+}
+
+.box210 {
+  background-color: transparent;
+}
+
+.box211 {
+  background-color: transparent;
+}
+
+.box212 {
+  background-color: transparent;
+}
+
+.box213 {
+  background-color: transparent;
+}
+
+.box214 {
+  background-color: transparent;
+}
+
+.box215 {
+  background-color: transparent;
+}
+
+.box216 {
+  background-color: transparent;
+}
+
+.box217 {
+  background-color: transparent;
+}
+
+.box218 {
+  background-color: transparent;
+}
+
+.box219 {
+  background-color: transparent;
+}
+
+.box220 {
+  background-color: transparent;
+}
+
+.box221 {
+  background-color: transparent;
+}
+
+.box222 {
+  background-color: transparent;
+}
+
+.box223 {
+  background-color: transparent;
+}
+
+.box224 {
+  background-color: transparent;
+}
+
+.box225 {
+  background-color: transparent;
+}
+
+.box226 {
+  background-color: transparent;
+}
+
+.box227 {
+  background-color: transparent;
+}
+
+.box228 {
+  background-color: transparent;
+}
+
+.box229 {
+  background-color: transparent;
+}
+
+.box230 {
+  background-color: transparent;
+}
+
+.box231 {
+  background-color: transparent;
+}
+
+.box232 {
+  background-color: transparent;
+}
+
+.box233 {
+  background-color: transparent;
+}
+
+.box234 {
+  background-color: transparent;
+}
+
+.box235 {
+  background-color: transparent;
+}
+
+.box236 {
+  background-color: transparent;
+}
+
+.box237 {
+  background-color: transparent;
+}
+
+.box238 {
+  background-color: transparent;
+}
+
+.box239 {
+  background-color: transparent;
+}
+
+.box240 {
+  background-color: transparent;
+}
+
+.box241 {
+  background-color: transparent;
+}
+
+.box242 {
+  background-color: transparent;
+}
+
+.box243 {
+  background-color: transparent;
+}
+
+.box244 {
+  background-color: transparent;
+}
+
+.box245 {
+  background-color: transparent;
+}
+
+.box246 {
+  background-color: transparent;
+}
+
+.box247 {
+  background-color: transparent;
+}
+
+.box248 {
+  background-color: transparent;
+}
+
+.box249 {
+  background-color: transparent;
+}
+
+.box250 {
+  background-color: transparent;
+}
+
+.box251 {
+  background-color: transparent;
+}
+
+.box252 {
+  background-color: transparent;
+}
+
+.box253 {
+  background-color: transparent;
+}
+
+.box254 {
+  background-color: transparent;
+}
+
+.box255 {
+  background-color: transparent;
+}
+
+.box256 {
+  background-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */
